@@ -96,9 +96,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: #4d5ae5;
-    margin-right: 149px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin: 16px 0;
   }
   
   .header-logo-span {
@@ -190,8 +188,7 @@ body {
     text-align: center;
     color: #ffffff;
     max-width: 216px;
-    margin: 0 auto;
-    margin-bottom: 72px;
+    margin: 0 auto 48px;
   }
   
   .section-hero-button {
@@ -208,7 +205,7 @@ body {
     height: 56px;
     border: none;
     border-radius: 4px;
-    margin: 48px auto 0;
+    margin: 0 auto 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
@@ -379,6 +376,9 @@ body {
   
   .section-portfolio-list-item {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 2px 1px rgba(46, 47, 66, 0.08);
   }
   
   .section-portfolio-list-item:hover {
@@ -808,7 +808,7 @@ body {
     transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
   }
 
-  .is-open-menu {
+  .menu-overlay.is-open {
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
@@ -884,6 +884,13 @@ body {
     margin-right: 120px;
   }
 
+  .menu-overlay{
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateX(-100%) !important;
+  }
+
   .header-menu{
     display: flex;
   }
@@ -922,7 +929,7 @@ body {
   }
 
   .section-about-list li{
-    flex-basis: calc((100% - 24px) / 2);
+    flex: 1 1 calc((100% - 24px) / 2);
   }
 
   .section-about-list-item-title{
@@ -994,6 +1001,10 @@ body {
   .footer-form{
     flex-direction: row;
   }
+
+  .form-input {
+    width: 264px;
+  }
 }
 
 @media (min-width: 1158px){
@@ -1036,7 +1047,10 @@ body {
   .section-about-list{
     flex-direction: row;
     gap: 24px;
-    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .section-about-list li {
+    flex: 1 1 calc((100% - 72px) / 4);
   }
 
   .about-svg{
@@ -1079,6 +1093,24 @@ body {
 
   .section-portfolio-list-item{
     width: calc((100% - 48px) / 3);
+    box-shadow: none;
+  }
+
+  .section-portfolio-list-item:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+
+  .menu-overlay{
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateX(-100%) !important;
+  }
+
+  .form-input {
+    width: 264px;
   }
 
   .footer{
