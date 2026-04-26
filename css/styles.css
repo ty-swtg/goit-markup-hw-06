@@ -866,136 +866,122 @@ body {
   display: flex;
   gap: 40px;
   justify-content: flex-start;
-  .container{
+}
+
+@media screen and (min-width: 768px) {
+
+  .container {
     width: 768px;
-    padding: 0 16px;
-    margin: 0 auto;
   }
 
-  .header-container .svg-cont{
+  .header-container .svg-cont {
     display: none;
   }
 
-  .header-logo{
+  .header-logo {
     margin-right: 120px;
   }
 
-  .menu-overlay{
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    transform: translateX(-100%) !important;
-  }
-
-  .header-menu{
+  .header-menu {
     display: flex;
   }
 
-  .header-contacts-menu{
+  .header-contacts-menu {
     display: flex;
-    gap: 12px;
     flex-direction: column;
+    gap: 12px;
   }
 
-  .header-contacts-menu-item-link{
+  .header-contacts-menu-item-link {
     font-size: 12px;
-    line-height: 1.4;
+    line-height: 1.17;
     letter-spacing: 0.04em;
   }
 
-  .section-hero{
-    padding: 0;
-    max-width: 1439px;
-    height: 432px;
-    padding: 112px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), image-set(url(../images/people-office-768.jpg) 1x, url(../images/people-office-768@2.jpg) 2x);
+  .menu-overlay {
+    display: none !important;
   }
 
-  .section-hero-title{
+  /* Hero Tablet */
+  .section-hero {
+    padding: 112px 0;
+    max-width: 768px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+                      image-set(url(../images/people-office-768.jpg) 1x, url(../images/people-office-768@2.jpg) 2x);
+  }
+
+  .section-hero-title {
     font-size: 56px;
-    line-height: 60px;
+    line-height: 1.07;
     max-width: 496px;
     margin-bottom: 36px;
   }
 
-  .section-about-list{
+  /* About Tablet */
+  .section-about-list {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
   }
 
-  .section-about-list li{
-    flex: 1 1 calc((100% - 24px) / 2);
-  }
-
-  .section-about-list-item-title{
-    text-align: start;
-  }
-
-  .team-container{
-    width: 584px;
-  }
-
-  .section-team-list{
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 64px 24px;
-    
-  }
-
-  .section-team-list-item{
+  .section-about-list li {
     flex-basis: calc((100% - 24px) / 2);
   }
 
-  .section-portfolio-list{
+  .section-about-list-item-title {
+    text-align: left;
+  }
+
+  /* Team Tablet */
+  .team-container {
+    width: 584px;
+  }
+
+  .section-team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+
+  .section-team-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  /* Portfolio Tablet */
+  .section-portfolio-list {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
   }
 
-  .section-portfolio-list-item{
+  .section-portfolio-list-item {
     width: calc((100% - 24px) / 2);
   }
-  
-  .footer-container{
-    align-items: start;
-    gap: 72px;
+
+  /* Footer Tablet */
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
     width: 584px;
-  }
-  
-  .footer-left{
-    margin-right: 24px;
+    gap: 72px 24px;
   }
 
-  .footer-logo{
-    justify-content: start;
+  .footer-left {
+    margin-bottom: 0;
   }
 
-  .footer-right-p{
-    text-align: start;
+  .footer-logo {
+    justify-content: flex-start;
   }
 
-  .footer-right-menu{
-    display: flex;
+  .footer-right-p {
+    text-align: left;
+  }
+
+  .footer-form {
     flex-direction: row;
-  }
-
-  .left-right{
-    display: flex;
-  }
-
-  .footer-form-container{
-    align-items: start;
-  }
-
-  .form-title{
-    margin: 0;
-    margin-bottom: 16px;
-    text-align: start;
-  }
-
-  .footer-form{
-    flex-direction: row;
+    gap: 24px;
   }
 
   .form-input {
