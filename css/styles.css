@@ -454,14 +454,6 @@ body {
     gap: 72px;
   }
   
-  .footer-left{
-    
-  }
-  
-  .footer-right{
-    
-  }
-
   .footer-right-p{
     font-weight: 500;
     font-size: 16px;
@@ -1002,12 +994,6 @@ body {
     width: 264px;
   }
 
-  .left-right {
-    display: flex;
-    gap: 24px;
-    width: 100%;
-  }
-
   .menu-bottom {
     display: flex;
     flex-direction: column;
@@ -1050,7 +1036,7 @@ body {
   }
 
   .header-logo{
-    margin-right: 40px;
+    margin-right: 80px;
   }
 
   .section-hero{
@@ -1156,10 +1142,6 @@ body {
     align-items: unset;
   }
 
-  .left-right{
-    display: flex;
-  }
-
   .footer-left{
     margin-bottom: 0;
   }
@@ -1194,10 +1176,6 @@ body {
   .modal{
     width: 408px;
     min-height: 584px;
-  }
-
-  .left-right {
-    gap: 80px;
   }
 
 }
