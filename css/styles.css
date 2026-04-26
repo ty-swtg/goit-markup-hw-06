@@ -167,7 +167,7 @@ body {
     display: flex;
     align-items: center;
     background-color: #2e2f42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), image-set(url(../images/people-office-320.jpg) 1x, url(../images/people-office-320@2.jpg) 2x);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-320.jpg);
     max-width: 767px;
     background-repeat: no-repeat;
     background-position: center;
@@ -189,6 +189,12 @@ body {
     color: #ffffff;
     max-width: 216px;
     margin: 0 auto 72px;
+  }
+  
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .section-hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-320@2.jpg);
+    }
   }
   
   .section-hero-button {
@@ -866,7 +872,7 @@ body {
   .menu-bottom {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 48px;
     margin-top: auto;
   }
 
@@ -1002,6 +1008,13 @@ body {
     width: 100%;
   }
 
+  .menu-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: auto;
+  }
+
   .modal {
     width: 408px;
     min-height: 584px;
@@ -1037,14 +1050,20 @@ body {
   }
 
   .header-logo{
-    margin-right: 80px;
+    margin-right: 40px;
   }
 
   .section-hero{
     height: auto;
     max-width: 1440px;
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), image-set(url(../images/people-office-1440.jpg) 1x, url(../images/people-office-1440@2.jpg) 2x);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1440.jpg);
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .section-hero{
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1440@2.jpg);
+    }
   }
 
   .section-hero-title{
