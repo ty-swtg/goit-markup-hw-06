@@ -9,7 +9,7 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle("is-open");
+    refs.modal.classList.toggle("is-open-menu");
     document.body.classList.toggle('no-scroll')
   }
 })();
