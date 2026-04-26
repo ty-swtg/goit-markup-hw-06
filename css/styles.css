@@ -1006,6 +1006,14 @@ body {
 
   .header-contacts-menu{
     display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .header-contacts-menu-item-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 
   .header-logo{
@@ -1023,7 +1031,7 @@ body {
     font-size: 56px;
     line-height: 1.07;
     max-width: 496px;
-    margin: 0 auto 36px;
+    margin: 0 auto 72px;
   }
 
   .section-about{
